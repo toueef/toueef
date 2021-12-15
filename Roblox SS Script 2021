@@ -1,0 +1,141 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local SuperSide = Instance.new("TextLabel")
+local Vereus = Instance.new("TextButton")
+local Electric = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local RequireHere = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local R6 = Instance.new("TextButton")
+local Respawn = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+ 
+--Properties:
+ 
+ScreenGui.Parent = game.CoreGui
+ 
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(66, 67, 67)
+Frame.Position = UDim2.new(0.486119658, 0, 0.436809808, 0)
+Frame.Size = UDim2.new(0, 592, 0, 256)
+Frame.Active = true 
+Frame.Draggable = true
+ 
+SuperSide.Name = "SuperSide"
+SuperSide.Parent = Frame
+SuperSide.BackgroundColor3 = Color3.fromRGB(169, 172, 166)
+SuperSide.Size = UDim2.new(0, 592, 0, 50)
+SuperSide.Font = Enum.Font.GothamBlack
+SuperSide.Text = "SuperSide"
+SuperSide.TextColor3 = Color3.fromRGB(0, 0, 0)
+SuperSide.TextSize = 14.000
+ 
+Vereus.Name = "Vereus"
+Vereus.Parent = Frame
+Vereus.BackgroundColor3 = Color3.fromRGB(169, 172, 166)
+Vereus.Position = UDim2.new(0.0287162159, 0, 0.25, 0)
+Vereus.Size = UDim2.new(0, 200, 0, 50)
+Vereus.Font = Enum.Font.GothamBlack
+Vereus.Text = "Vereus"
+Vereus.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vereus.TextSize = 14.000
+Vereus.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/wC64LrAJ", true))()
+end)
+ 
+Electric.Name = "Electric"
+Electric.Parent = Frame
+Electric.BackgroundColor3 = Color3.fromRGB(169, 172, 166)
+Electric.Position = UDim2.new(0.408783793, 0, 0.25, 0)
+Electric.Size = UDim2.new(0, 200, 0, 50)
+Electric.Font = Enum.Font.GothamBlack
+Electric.Text = "Electric"
+Electric.TextColor3 = Color3.fromRGB(0, 0, 0)
+Electric.TextSize = 14.000
+Electric.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/udbCnrAb", true))()
+end)
+ 
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(169, 172, 166)
+TextBox.Position = UDim2.new(0.0287162159, 0, 0.5, 0)
+TextBox.Size = UDim2.new(0, 425, 0, 113)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+ 
+RequireHere.Name = "Require Here"
+RequireHere.Parent = Frame
+RequireHere.BackgroundColor3 = Color3.fromRGB(169, 172, 166)
+RequireHere.BorderColor3 = Color3.fromRGB(169, 172, 166)
+RequireHere.Position = UDim2.new(0.0388513505, 0, 0.5234375, 0)
+RequireHere.Size = UDim2.new(0, 194, 0, 16)
+RequireHere.Font = Enum.Font.SourceSans
+RequireHere.Text = "Require Here"
+RequireHere.TextColor3 = Color3.fromRGB(0, 0, 0)
+RequireHere.TextSize = 14.000
+ 
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(66, 67, 67)
+Execute.Position = UDim2.new(0.486486495, 0, 0.8203125, 0)
+Execute.Size = UDim2.new(0, 154, 0, 31)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 14.000
+ 
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(169, 172, 166)
+Credits.Position = UDim2.new(0.780405402, 0, 0.25, 0)
+Credits.Size = UDim2.new(0, 108, 0, 177)
+Credits.Font = Enum.Font.Ubuntu
+Credits.Text = "SuperSide"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 14.000
+ 
+R6.Name = "R6"
+R6.Parent = Frame
+R6.BackgroundColor3 = Color3.fromRGB(66, 67, 67)
+R6.Position = UDim2.new(0.854729712, 0, 0.0390625, 0)
+R6.Size = UDim2.new(0, 64, 0, 29)
+R6.Font = Enum.Font.SourceSans
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(0, 0, 0)
+R6.TextSize = 14.000
+R6.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/tDTyHxq1", true))()
+end)
+ 
+Respawn.Name = "Respawn"
+Respawn.Parent = Frame
+Respawn.BackgroundColor3 = Color3.fromRGB(66, 67, 67)
+Respawn.Position = UDim2.new(0.721283793, 0, 0.0390625, 0)
+Respawn.Size = UDim2.new(0, 64, 0, 29)
+Respawn.Font = Enum.Font.SourceSans
+Respawn.Text = "RS"
+Respawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Respawn.TextSize = 14.000
+Respawn.MouseButton1Down:connect(function()
+    local a1 = Instance.new("Model", workspace)
+    local a2 = Instance.new("Part", a1)
+    a2.CanCollide = true
+    a2.Anchored = true
+    a2.CFrame = CFrame.new(10000, 10000, 10000)
+    a2.Name = "Torso"
+    local a3 = Instance.new("Humanoid", a1)
+    a3.MaxHealth=100;a3.Health=100
+    game.Players.LocalPlayer.Character = a1
+    a3.Health=0
+end)
+ 
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(66, 67, 67)
+TextButton.Size = UDim2.new(0, 66, 0, 39)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
