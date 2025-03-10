@@ -1,6 +1,21 @@
 -- load using loadstring loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\84\111\117\115\101\101\102\88\47\84\111\117\115\101\101\102\88\47\109\97\105\110\47\82\111\98\108\111\120\72\97\99\107\115\47\77\111\114\101\84\111\117\115\101\101\102\88\72\117\98\46\108\117\97\34\44\116\114\117\101\41\41\40\41")()
 
+local StarterGui = game:GetService("StarterGui")
+local showNotification = true
+
 print("Creating Frames And GUI")
+function Notifyy(tl, t, d) 
+	if showNotification == true then
+		StarterGui:SetCore("SendNotification", {
+			Title = tl;
+			Text = t;
+			Duration = d;
+			Icon = "http://www.roblox.com/asset/?id=";
+		})
+	end
+end
+
+Notifyy("TouseefX Loader", "Creating Functions and GUI", 3)
 
 local NotifyModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/PeaPattern/notif-lib/main/main.lua"))()
 local MainGUI = Instance.new("ScreenGui")
@@ -19,6 +34,9 @@ local Close = Instance.new("TextButton")
 
 print("Created")
 print("Loading Frames,GUI")
+Notifyy("TouseefX Loader", "Created, Starting Loading some scripts and gui cofings", 3)
+-- trun off this thing ngl
+local showNotification = false
 
 MainGUI.Name = "MainGUI"
 MainGUI.Parent = game.CoreGui
@@ -92,14 +110,15 @@ FeNoobAll.Position = UDim2.new(0.0504385978, 0, 0.0440616868, 0)
 FeNoobAll.BorderSizePixel = 0
 FeNoobAll.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
 FeNoobAll.TextColor3 = Color3.fromRGB(0, 0, 0)
-FeNoobAll.Text = "Fe Noob All"
+FeNoobAll.Text = "Fe Steve"
 FeNoobAll.TextSize = 14
 FeNoobAll.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FeNoobAll.MouseButton1Down:Connect(function()
-	NotifyModule:Notify("Fe Noob All Loaded Fling Everyone Now:)", 5)
-	loadstring(game:HttpGet(('https://pastebin.ai/raw/1priqwpcnv'),true))()
+	NotifyModule:Notify("does not work on some games", 5)
+	loadstring(game:HttpGet(('https://pastebin.com/raw/2NNDTLjL'),true))()
         wait(4)
-        NotifyModule:Notify("Script By jxserr", 5)
+        NotifyModule:Notify("Script By Depr1", 5)
+        NotifyModule:Notify("Script Link by Delros12", 5)
 end)
 
 FeAnimR6.Name = "FeAnimR6"
@@ -1787,7 +1806,7 @@ FeChatB.Position = UDim2.new(0.0504385978, 0, 0.0932036042, 0)
 FeChatB.BorderSizePixel = 0
 FeChatB.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
 FeChatB.TextColor3 = Color3.fromRGB(0, 0, 0)
-FeChatB.Text = "Fe Bypass (Harked)"
+FeChatB.Text = "Fe Bypass (HarkedReScripted)"
 FeChatB.TextSize = 14
 FeChatB.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FeChatB.MouseButton1Down:Connect(function()
@@ -1826,7 +1845,7 @@ FB.MouseButton1Down:Connect(function()
         wait(1)
         NotifyModule:Notify("But XXX Scripts Team Found it", 2)
         wait(1)
-        NotifyModule:Notify("This Script Scans More BackDoor then Others One Executing Now", 3)
+        NotifyModule:Notify("This Script Scans More BackDoor using cars model", 3)
 	local StarterGui = game:GetService("StarterGui")
 	local showNotification = true
 
@@ -2688,4 +2707,4 @@ UserInputService.InputChanged:Connect(function(input)
 end)
 
 print("Loaded")
-NotifyModule:Notify("Thanks For Using More TouseefX Script Hub!:)", 5)
+NotifyModule:Notify("Loaded Thanks For Using More TouseefX Script Hub!:)", 5)
