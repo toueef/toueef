@@ -17,7 +17,7 @@ end
 
 Notifyy("TouseefX Loader", "Creating Functions and GUI", 3)
 
-local NotifyModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/PeaPattern/notif-lib/main/main.lua"))()
+-- local NotifyModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/PeaPattern/notif-lib/main/main.lua"))()
 local MainGUI = Instance.new("ScreenGui")
 local Open = Instance.new("Frame")
 local Open_2 = Instance.new("TextButton")
@@ -67,7 +67,7 @@ Open_2.MouseButton1Down:Connect(function()
 	Main_2.Visible = true
 	wait(1)
 	Open.Visible = false
-        NotifyModule:Notify("Opened!", 2)
+        Notify("Opened!", 2)
 end)
 
 print("Open Frame Loaded")
@@ -117,8 +117,8 @@ FeNoobAll.MouseButton1Down:Connect(function()
 	NotifyModule:Notify("does not work on some games", 5)
 	loadstring(game:HttpGet(('https://pastebin.com/raw/2NNDTLjL'),true))()
         wait(4)
-        NotifyModule:Notify("Script By Depr1", 5)
-        NotifyModule:Notify("Script Link by Delros12", 5)
+        Notify("Script By Depr1", 5)
+        Notify("Script Link by Delros12", 5)
 end)
 
 FeAnimR6.Name = "FeAnimR6"
@@ -133,7 +133,7 @@ FeAnimR6.Text = "Fe Animtion R6"
 FeAnimR6.TextSize = 14
 FeAnimR6.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FeAnimR6.MouseButton1Down:Connect(function()
-        NotifyModule:Notify("This Script is Huge Gonna Cook In", 3)
+        Notify("This Script is Huge Gonna Cook In", 3)
 	local Energize = Instance.new("ScreenGui")
 	local MainFrame = Instance.new("Frame")
 	local GuiBottomFrame = Instance.new("Frame")
@@ -1841,15 +1841,15 @@ FB.Text = "Fe Bypass (Backdoor)"
 FB.TextSize = 14
 FB.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FB.MouseButton1Down:Connect(function()
-        NotifyModule:Notify("This Script Has Private", 2)
+        Notify("This Script Has Private", 2)
         wait(1)
-        NotifyModule:Notify("But XXX Scripts Team Found it", 2)
+        Notify("But XXX Scripts Team Found it", 2)
         wait(1)
-        NotifyModule:Notify("This Script Scans More BackDoor using cars model", 3)
+        Notify("This Script Scans Tools using cars model", 3)
 	local StarterGui = game:GetService("StarterGui")
 	local showNotification = true
 
-	function Notify(tl, t, d) 
+	function Notifyy(tl, t, d) 
 		if showNotification == true then
 			StarterGui:SetCore("SendNotification", {
 				Title = tl;
@@ -1891,7 +1891,7 @@ FB.MouseButton1Down:Connect(function()
 	local names = {"Delete", "Deletar", "Remove", "Destroy", "Clean", "Clear","Bullet", "Bala", "Shoot", "Shot", "Fire", "Segway", "Handless", "Sword", "Attack"}
 	if char then
 		blurefct(20)
-		Notify("Vulnerability Checker", "Looking up for remotes, may take a while.", 3)
+		Notifyy("Vulnerability Checker", "Looking up for remotes, may take a while.", 3)
 		for _, service in pairs(checkIn) do
 			for i,v in pairs(game:GetService(service):GetDescendants()) do
 				for _, str in pairs(names) do
@@ -1916,7 +1916,7 @@ FB.MouseButton1Down:Connect(function()
 	end
 
 	if sent == false then
-		Notify("Vulnerability Checker", "This game is not vulnerable/supported.", 5)
+		Notifyy("Vulnerability Checker", "This game is not vulnerable/supported.", 5)
 		blurefct(0)
 	end
 
@@ -1954,7 +1954,7 @@ FB.MouseButton1Down:Connect(function()
 	end
 	if enable == true then
 		blurefct(0)
-		Notify("Destructed Hex", "Made by Luq and Luca", 10)
+		Notifyy("Destructed Hex", "Made by Luq and Luca", 10)
 		local destruct = Instance.new("ScreenGui")
 		local main = Instance.new("Frame")
 		local TextLabel = Instance.new("TextLabel")
@@ -2337,12 +2337,12 @@ FB.MouseButton1Down:Connect(function()
 		game:GetService("Players").PlayerAdded:Connect(function(plr)
 			for i,v in pairs(bannedPlayers) do
 				if plr.Name == v then
-					Notify("Banned User", plr.Name .. " Tried to join the game", 5)
+					Notifyy("Banned User", plr.Name .. " Tried to join the game", 5)
 					work(plr)
 				end
 			end
 			if serverlock == true then
-				Notify("Join Attempt", plr.Name .. " Tried to join the game but the server is locked", 5)
+				Notifyy("Join Attempt", plr.Name .. " Tried to join the game but the server is locked", 5)
 				work(plr)
 			end
 			if sdown == true then
@@ -2544,12 +2544,12 @@ FB.MouseButton1Down:Connect(function()
 		slock.MouseButton1Click:Connect(function()
 			if toggle == false then
 				slock.Text = "UnSlock"
-				Notify("Server Locked", "Nobody can join the server", 5)
+				Notifyy("Server Locked", "Nobody can join the server", 5)
 				serverlock = true
 				toggle = true
 			elseif toggle == true then
 				slock.Text = "Slock"
-				Notify("Server Unlocked", "Anyone can join the server", 5)
+				Notifyy("Server Unlocked", "Anyone can join the server", 5)
 				serverlock = false
 				toggle = false
 			end
@@ -2571,7 +2571,7 @@ FB.MouseButton1Down:Connect(function()
 
 		shutdown.MouseButton1Click:Connect(function()
 			sdown = true
-			Notify("Shutdown", "Shutdowning server..", 5)
+			Notifyy("Shutdown", "Shutdowning server..", 5)
 			for i, v in pairs(game:GetService("Players"):GetPlayers()) do
 				spawn(function()
 					if v.Name ~= LocalPlayer.Name then
@@ -2637,12 +2637,12 @@ FeGamepass.Position = UDim2.new(0.651315808, 0, 0.0922147781, 0)
 FeGamepass.BorderSizePixel = 0
 FeGamepass.BackgroundColor3 = Color3.fromRGB(244, 244, 244)
 FeGamepass.TextColor3 = Color3.fromRGB(0, 0, 0)
-FeGamepass.Text = "FE Gamepass Giver"
+FeGamepass.Text = "FE Audio Player (brookhaven)"
 FeGamepass.TextSize = 14
 FeGamepass.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FeGamepass.MouseButton1Down:Connect(function()
-	NotifyModule:Notify("Fe GamePass Loaded Sometimes does not work", 5)
-	loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/6982de484735e730494b2d5a10fd6a2a/raw/a92563b0cd6a63683341a09f54baccea5349ed69/feGamepassV2",true))()
+	Notify("Only works on brookhavenand some games i guess", 5)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ameicaa0/brookhaven/refs/heads/main/brookhaven%20script.txt"))()
 end)
 
 Close.Name = "Close"
@@ -2660,7 +2660,7 @@ Close.MouseButton1Down:Connect(function()
 	Open.Visible = true
 	wait(1)
 	Main_2.Visible = false
-        NotifyModule:Notify("Closed!", 2)
+        Notify("Closed!", 2)
 end)
 
 print("Main Frame Loaded")
@@ -2706,5 +2706,131 @@ UserInputService.InputChanged:Connect(function(input)
 	end
 end)
 
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 7 | Scripts: 1 | Modules: 0
+local G2L = {};
+
+-- StarterGui.Notifications
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["Name"] = [[Notifications]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+G2L["1"]["DisplayOrder"] = 999999;
+
+-- StarterGui.Notifications.LocalScript
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.Notifications.LocalScript.Template
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["3"]["BackgroundTransparency"] = 0.5;
+G2L["3"]["Size"] = UDim2.new(0.13699999451637268, 0, 0.025, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Position"] = UDim2.new(0.5, 0, 0.8847006559371948, 0);
+G2L["3"]["Name"] = [[Template]];
+
+-- StarterGui.Notifications.LocalScript.Template.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["3"]);
+G2L["4"]["CornerRadius"] = UDim.new(1, 0);
+
+-- StarterGui.Notifications.LocalScript.Template.Label
+G2L["5"] = Instance.new("TextLabel", G2L["3"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["RichText"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[example]];
+G2L["5"]["Name"] = [[Label]];
+G2L["5"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.Notifications.LocalScript.Template.Label.UIPadding
+G2L["6"] = Instance.new("UIPadding", G2L["5"]);
+G2L["6"]["PaddingTop"] = UDim.new(0.20000000298023224, 0);
+G2L["6"]["PaddingRight"] = UDim.new(0.20000000298023224, 0);
+G2L["6"]["PaddingBottom"] = UDim.new(0.20000000298023224, 0);
+G2L["6"]["PaddingLeft"] = UDim.new(0.20000000298023224, 0);
+
+-- StarterGui.Notifications.LocalScript.Template.Label.UITextSizeConstraint
+G2L["7"] = Instance.new("UITextSizeConstraint", G2L["5"]);
+G2L["7"]["MaxTextSize"] = 18;
+
+-- StarterGui.Notifications.LocalScript
+local function C_2()
+local script = G2L["2"];
+	local TweenService = game:GetService("TweenService")
+	local TextService = game:GetService("TextService")
+	local Active = 0
+	local Notifications = {}
+	
+	local Library = {}
+	
+	function Library:Notify(Text: string, Time: number)
+		local PrePosition = UDim2.new(0.5, 0, 1.1, 0)
+		local PostPosition = UDim2.new(0.5, 0, 0.885 - (Active / 15), 0)
+		Active += 1
+	
+		local Template = script.Template:Clone()
+		Template.Parent = script.Parent
+		Template.Label.Text = Text
+		Template.Position = PrePosition
+	
+		local textSize = TextService:GetTextSize(Text, Template.Label.TextSize, Template.Label.Font, Vector2.new(10000, Template.Label.AbsoluteSize.Y))
+		local parentWidth = Template.Parent.AbsoluteSize.X
+		local newScaleX = ((textSize.X + 20) / parentWidth)
+	
+		Template.Size = UDim2.new(newScaleX, 0, Template.Size.Y.Scale, 0)
+	
+		table.insert(Notifications, Template)
+	
+		local Post = TweenService:Create(Template, TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Position = PostPosition})
+		local Pre = TweenService:Create(Template, TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Position = PrePosition})
+	
+		task.spawn(function()
+			Post:Play()
+			Post.Completed:Wait()
+			task.wait(Time)
+			Pre:Play()
+			for i, v in ipairs(Notifications) do
+				if v == Template then
+					table.remove(Notifications, i)
+					break
+				end
+			end
+			Active -= 1
+			self:UpdatePositions()
+			Pre.Completed:Wait()
+			Template:Destroy()
+		end)
+	end
+	
+	function Library:UpdatePositions()
+		for i, notification in ipairs(Notifications) do
+			local NewPosition = UDim2.new(0.5, 0, 0.885 - ((i - 1) / 15), 0)
+			local Tween = TweenService:Create(notification, TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Position = NewPosition})
+			Tween:Play()
+		end
+	end
+  
+	return Library;
+end;
+local Library = C_2();
+
+return Library, G2L["1"];
+
 print("Loaded")
-NotifyModule:Notify("Loaded Thanks For Using More TouseefX Script Hub!:)", 5)
+C_2:Notify("Loaded Thanks For Using More TouseefX Script Hub!:)", 5)
